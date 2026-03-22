@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Particle Image Disintegration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="menu-toggle" class="floating-btn" title="Settings">⚙️</button>
+
+<div id="settings-panel" class="glass-panel">
+  <div class="panel-header">
+    <h3>✨ Particle Controls</h3>
+    <button id="menu-close" class="close-btn" title="Close Settings">&times;</button>
+  </div>
+  
+  <div class="panel-content">
+    
+    <div class="control-group">
+      <label for="preset-images">Choose a Preset Image:</label>
+      <select id="preset-images">
+        <option value="https://klevron.github.io/codepen/misc/myrtilles.jpg">🫐 Blueberries (Default)</option>
+        <option value="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1000&q=80">🌌 Space Galaxy</option>
+        <option value="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1000&q=80">🤖 Cyberpunk</option>
+        <option value="https://images.unsplash.com/photo-1506744626753-1fa28f6e5229?auto=format&fit=crop&w=1000&q=80">🏔️ Mountains</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label for="img-url">Or Paste Custom Image URL:</label>
+      <input type="text" id="img-url" placeholder="Paste image URL here...">
+      <button id="btn-load-img">Load Custom Image</button>
+    </div>
+
+    <div class="control-group">
+      <label for="particle-size">Particle Size Multiplier:</label>
+      <input type="range" id="particle-size" min="1" max="20" step="1" value="8">
+    </div>
+
+    <div class="control-group">
+      <label>Background visibility:</label>
+      <button id="btn-toggle-bg" class="active">Show Background</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
